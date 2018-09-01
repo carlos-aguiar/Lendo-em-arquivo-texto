@@ -1,4 +1,4 @@
-#Lendo em um arquivo usando C 
+Lendo em um arquivo usando C 
 
 Atividade desenvolvida em sala de aula usando linguagem C.
 
