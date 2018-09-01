@@ -2,7 +2,7 @@
  * @uthor: Carlos Santos de Aguiar; Gabriel Pereira dos Santos;
  * Matricula: 312141056; 312161028;
  * Data: 10/12/2016
- * Disciplina: Linguagem de ProgramaÁ„o
+ * Disciplina: Linguagem de Programa√ß√£o
  * Orientador: Jairo Rego
  *
  */
@@ -15,9 +15,9 @@
 
 typedef struct{
 	
-	long long int contrato;
-	int consumoMes, consumoAnterior;
-	int dia, mes, ano;
+    long long int contrato;
+    int consumoMes, consumoAnterior;
+    int dia, mes, ano;
     float valorMes, taxaPublica;
     char situacao[7]; 
     
@@ -25,7 +25,7 @@ typedef struct{
 
  Dados cliente[TOTAL];
 
-// prototipo das funÁıes
+// prototipo das fun√ß√µes
 void listarContratos(int a);
 void analiseConsumoZero();
 void listarExcetoZero();
@@ -38,8 +38,8 @@ int main(){
 	FILE *arqRead; 
 	
 	/*
-	 * No trecho abaixo h· uma condiÁ„o que n„o ser· satisfeita se o ponteiro criado n„o apontar para a abertura do arquivo
-	 * correto. Neste caso, ser· retornado uma mensagem para o usu·rio informando que n„o foi possÌvel abrir o arquivo.
+	 * No trecho abaixo h√° uma condi√ß√£o que n√£o ser√° satisfeita se o ponteiro criado n√£o apontar para a abertura do arquivo
+	 * correto. Neste caso, ser√° retornado uma mensagem para o usu√°rio informando que n√£o foi poss√≠vel abrir o arquivo.
 	 *
 	 */
 
@@ -49,7 +49,7 @@ int main(){
 	}
 	    
 	/* 
-	 * No trecho abaixo criamos uma string de caracteres que ser· apropriada para substituir as barras por espaÁos.
+	 * No trecho abaixo criamos uma string de caracteres que ser√° apropriada para substituir as barras por espa√ßos.
 	 * Utilizamos essa forma para facilitar a leitura dos dados (apenas os dados sem as barras) pela struct que criamos. 
 	 */   
 	    
@@ -57,7 +57,7 @@ int main(){
 	char lbarra[43];
 	    
 	char c = fscanf(arqRead, "%s", lbarra); // faz a primeira leitura antes de entrar no while   
-	while(c != EOF){ // enquanto n„o for encontrado o final do arquivo(end of file) c continuar· fazendo a leitura 
+	while(c != EOF){ // enquanto n√£o for encontrado o final do arquivo(end of file) c continuar√° fazendo a leitura 
     	
     lbarra[10]=' '; lbarra[13] = ' '; lbarra[16] = ' '; lbarra[21] = ' '; lbarra[25] = ' '; lbarra[32] = ' ';
 	lbarra[38] = ' '; lbarra[42] = ' ';
@@ -66,7 +66,7 @@ int main(){
 	&cliente[i].consumoMes, &cliente[i].valorMes, &cliente[i].taxaPublica, &cliente[i].consumoAnterior, cliente[i].situacao);
     
    
-	c = fscanf(arqRead, "%s", lbarra); // repete a leitura antes de voltar para a condiÁ„o while
+	c = fscanf(arqRead, "%s", lbarra); // repete a leitura antes de voltar para a condi√ß√£o while
 	i++;
     } 
     			
@@ -100,7 +100,7 @@ int main(){
       printf("  CONTRATO|VENCIMENTO|C.M|VL.MES|T.PBL|C.A|SIT \n");                              
       printf("***********************************************\n");   
   
-  //Aqui entra a opÁ„o desejada pelo usu·rio
+  //Aqui entra a op√ß√£o desejada pelo usu√°rio
  switch(opcao){
  	
  	case 1: listarExcetoZero();
@@ -136,8 +136,8 @@ int main(){
       
  }
  
- /* Essa funÁ„o È universal, todas as funÁıes que necessitam lista o documento chamam essa funÁ„o. Desta forma, encurtamos 
-  * a quantidade de linhas de cÛdigo e deixamos o cÛdigo mais legÌvel, mais apropriado.
+ /* Essa fun√ß√£o √© universal, todas as fun√ß√µes que necessitam lista o documento chamam essa fun√ß√£o. Desta forma, encurtamos 
+  * a quantidade de linhas de c√≥digo e deixamos o c√≥digo mais leg√≠vel, mais apropriado.
   */
   
  void listarContratos(int i){
