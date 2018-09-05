@@ -1,12 +1,3 @@
-/*
- * @uthor: Carlos Santos de Aguiar;
- * Matricula: 312141056;
- * Data: 10/12/2016
- * Disciplina: Linguagem de Programação
- * Orientador: Jairo Rego
- *
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
