@@ -1,6 +1,6 @@
 /*
- * @uthor: Carlos Santos de Aguiar; Gabriel Pereira dos Santos;
- * Matricula: 312141056; 312161028;
+ * @uthor: Carlos Santos de Aguiar;
+ * Matricula: 312141056;
  * Data: 10/12/2016
  * Disciplina: Linguagem de Programação
  * Orientador: Jairo Rego
