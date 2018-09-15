@@ -1,5 +1,4 @@
-Lendo em um arquivo usando C 
 
-Atividade desenvolvida em sala de aula usando linguagem C.
+Reading in a file using C
 
-O código faz leitura em um arquivo txt e em seguida imprime o resultado do demonstrativo de consumo.
+The code reads into a txt file and then prints the result of the statement of consumption.
