@@ -1,4 +1,4 @@
 
-Reading in a file using C
+Um simples programa que realiza leitura em arquivo utilizando linguagem C
 
-The code reads into a txt file and then prints the result of the statement of consumption.
+O código lê em um arquivo txt e imprime o resultado da declaração de consumo.
